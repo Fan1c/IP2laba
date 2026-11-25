@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Прохор">
+    <meta name="description" content="Трибуна: ссылки о футболе и небольшие скрипты для работы с текстом.">
+    <meta name="keywords" content="футбол, ссылки, ФИФА, УЕФА, JavaScript">
+    <title>Футбол — трибуна</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="score"><span>ТРИБУНА</span><b>LIVE</b><span>МОЙ САЙТ</span></div>
+
+    <section class="band" id="top">
+        <div>
+            <h1>Трибуна болельщика</h1>
+            <nav class="chips">
+                <a href="#links">Ссылки</a>
+                <a href="#lab">Текстовая лаборатория</a>
+                <a href="index.html#club">Мой клуб</a>
+            </nav>
+        </div>
+    </section>
+
+    <section class="band dark" id="links">
+        <div>
+            <h2>Где читать и смотреть</h2>
+            <img class="right" src="img/trophy.png" width="130" height="173" alt="Кубок">
+            <p>Несколько надёжных мест, где можно узнать больше о футболе:</p>
+            <ul class="links">
+                <li><a href="https://www.fifa.com/" target="_blank" rel="noopener">FIFA — международная федерация</a>
+                </li>
+                <li><a href="https://www.uefa.com/" target="_blank" rel="noopener">UEFA — европейский футбол</a></li>
+                <li><a href="https://ru.wikipedia.org/wiki/Футбол" target="_blank" rel="noopener">Футбол в Википедии</a>
+                </li>
+            </ul>
+            <div class="stop"></div>
+        </div>
+    </section>
+
+    <section class="band" id="lab">
+        <div>
+            <h2>Текстовая лаборатория</h2>
+            <h3>Удалить слова длиннее 7 букв</h3>
+            <div class="tool">
+                <textarea id="sentence1"
+                    rows="2">Нападающий мастерски обработал мяч и пробил точно в девятку ворот</textarea>
+                <button onclick="removeLongWords()">Удалить длинные слова</button>
+            </div>
+            <h3>Самая частая буква</h3>
+            <div class="tool">
+                <textarea id="sentence2" rows="2">Стадион замер перед решающим пенальти</textarea>
+                <button onclick="mostFrequentLetter()">Найти букву</button>
+            </div>
+            <h3>Удалить цифры (новое окно)</h3>
+            <div class="tool">
+                <textarea id="sentence3" rows="2">Матч закончился 3:2, а на трибунах было 45000 зрителей</textarea>
+                <button onclick="removeDigits()">Удалить цифры</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="band dark">
+        <div>
+            <h2>Вернуться</h2>
+            <p><a href="index.html#rules">К правилам</a> · <a href="history.html#timeline">К хронологии</a> · <a
+                    href="#top">↑ Наверх</a></p>
+        </div>
+    </section>
+    <footer>Лабораторная № 2 — «Мой первый хоумпейдж»</footer>
+
+    <nav class="tabbar">
+        <a href="index.html">Главная</a>
+        <a href="history.html">История</a>
+        <a class="active" href="tribuna.html">Трибуна</a>
+    </nav>
+    <script src="script.js"></script>
+</body>
+
+</html>
